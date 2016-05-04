@@ -5,18 +5,18 @@ require_relative '../lib/Item'
 describe Bluray do
 
   before(:context) do
-    @bluray = @Bluray.new("A Tour of a Life: Jacob", 17.97, "3.79 hours", "Spike Lee", "ESPN")
+    @bluray = Bluray.new("A Tour of a Life: Jacob", 17.97, "3.79 hours", "Spike Lee", "ESPN")
   end
 
   #check initialization
   #check that it is an instance of Book
   describe "Initialization" do
-    it "is an instance of the Book class" do
+    it "is an instance of the Bluray class" do
       expect(@bluray).to be_instance_of(Bluray)
     end
     #check that it is an extended from Item
     it "inherits from/extended from Item" do
-      expect(Bluray).to < Item
+      expect(Bluray).to be < Item
     end
   end
 

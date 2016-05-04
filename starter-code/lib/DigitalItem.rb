@@ -23,5 +23,5 @@ class DigitalItem < Item
     true
   end
 
-  
+
 end

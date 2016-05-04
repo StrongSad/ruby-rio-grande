@@ -17,7 +17,7 @@ describe Book do
     end
     #check that it is an extended from Item
     it "inherits from/extended from Item" do
-      expect(Book).to < Item
+      expect(Book).to be < Item
     end
   end
 

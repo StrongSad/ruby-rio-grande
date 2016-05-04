@@ -17,7 +17,7 @@ describe EBook do
     end
     #check that it is an extended from Item
     it "inherits from/extended from DigitalItem" do
-      expect(Song).to < DigitalItem
+      expect(Song).to be < DigitalItem
     end
   end
 

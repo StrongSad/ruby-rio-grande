@@ -4,7 +4,7 @@ require_relative '../lib/DigitalItem'
 describe DigitalItem do
 
   before(:context) do
-    @digitalitem = DIgitalItem.new("Generic Item",1.99) 
+    @digitalitem = DigitalItem.new("Generic Item",1.99) 
   end
 
   describe "Initialization" do
@@ -12,7 +12,7 @@ describe DigitalItem do
       expect(@digitalitem).to be_instance_of(DigitalItem)
     end
     it "should inherit from item" do
-      expect(DigitalItem).to < Item
+      expect(DigitalItem).to be < Item
     end
   end
 
@@ -31,8 +31,8 @@ describe DigitalItem do
       expect(@digitalitem.name).to eq("New Name")
     end
     it "should be able to get and set price" do
-      @digittalitem.price=44.99
-      expect(@digitalitem.price).to eq(44.99)
+      @digittalitem.price = 1.99
+      expect(@digitalitem.price).to eq(1.99)
     end
   end
 

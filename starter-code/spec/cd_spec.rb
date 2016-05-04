@@ -16,7 +16,7 @@ describe Cd do
     end
     #check that it is an extended from Item
     it "inherits from/extended from Item" do
-      expect(Cd).to < Item
+      expect(Cd).to be < Item
     end
   end
 
