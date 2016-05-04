@@ -1,6 +1,6 @@
 require_relative 'DigitalItem.rb'
 
-class Bluray < DigitalItem
+class Movie < DigitalItem
   attr_accessor :name, :price, :run_time, :director, :producer
 
   def initialize name, price, run_time, director, producer

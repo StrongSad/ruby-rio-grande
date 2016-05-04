@@ -17,4 +17,11 @@ class DigitalItem < Item
     @quantity = 1
     true
   end
+
+  def return
+    @quantity = 1
+    true
+  end
+
+  
 end

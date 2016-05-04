@@ -1,6 +1,6 @@
 require_relative 'DigitalItem.rb'
 
-class Book < DigitalItem
+class EBook < DigitalItem
   attr_accessor :name, :price, :pages, :author
 
   def initialize name, price, pages, author
