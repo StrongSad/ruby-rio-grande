@@ -3,7 +3,7 @@ require_relative 'spec_helper'
 require_relative '../lib/Movie' 
 require_relative '../lib/DigitalItem'  
 
-describe EBook do
+describe Movie do
 
   before(:context) do
     @movie = Movie.new("Movie", 13, "2 hours", "Spike Lee", "ESPN")
@@ -47,7 +47,7 @@ describe EBook do
 
   describe "Methods" do
     it "should always have quantity of 1" do
-      expect(@movie.stock).to eq(1)
+      expect(@movie.quantity).to eq(1)
     end
     it "should be able to sell without decreasing quantity" do
       result = @movie.sell 6

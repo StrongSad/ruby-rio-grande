@@ -43,7 +43,7 @@ describe EBook do
 
   describe "Methods" do
     it "should always have quantity of 1" do
-      expect(@ebook.stock).to eq(1)
+      expect(@ebook.quantity).to eq(1)
     end
     it "should be able to sell without decreasing quantity" do
       result = @ebook.sell 6

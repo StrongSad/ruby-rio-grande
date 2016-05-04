@@ -9,17 +9,14 @@ class DigitalItem < Item
   end
 
   def sell amount
-    @quantity = 1
     true
   end
 
   def stock amount
-    @quantity = 1
     true
   end
 
-  def return
-    @quantity = 1
+  def return amount
     true
   end
 

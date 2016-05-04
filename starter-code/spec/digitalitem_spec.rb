@@ -38,17 +38,17 @@ describe DigitalItem do
 
   describe "Methods" do
     it "should always have a quantity of 1" do
-      expect(@digitalitem).to eq(1)
+      expect(@digitalitem.quantity).to eq(1)
     end
     it "should be able to sell items and not decrease quantity" do
-      result = @item.sell 3
+      result = @digitalitem.sell 3
       expect(result).to eq(true)
-      expect(@item.quantity).to eq(1)
+      expect(@digitalitem.quantity).to eq(1)
     end
     it "should not increase on stock" do
       result = @digitalitem.stock(5)
-      expect(@digitalitem.stock).to eq(true)
-      expect(@digitalitem.stock).to eq(1)
+      expect(result).to eq(true)
+      expect(@digitalitem.quantity).to eq(1)
     end
   end
 end
