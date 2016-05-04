@@ -31,7 +31,7 @@ describe DigitalItem do
       expect(@digitalitem.name).to eq("New Name")
     end
     it "should be able to get and set price" do
-      @digittalitem.price = 1.99
+      @digitalitem.price=1.99
       expect(@digitalitem.price).to eq(1.99)
     end
   end

@@ -24,19 +24,19 @@ describe EBook do
   #check getters and setters
   describe "Accessors" do
     it "should be able to get and set name" do
-      @ebook.name = "New Title"
+      @ebook.name="New Title"
       expect(@ebook.name).to eq("New Title")
     end
     it "should be able to get and set price" do
-      @ebook.price = 10.00
+      @ebook.price=10.00
       expect(@ebook.price).to eq(10.00)
     end
     it "should be able to get and set pages" do
-      @ebook.pages = 34
+      @ebook.pages=34
       expect(@ebook.pages).to eq(34)
     end
     it "should be able to get and set author" do
-      @ebook.author = "New Author"
+      @ebook.author="New Author"
       expect(@ebook.author).to eq("New Author")
     end
   end

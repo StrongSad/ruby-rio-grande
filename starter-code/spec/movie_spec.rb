@@ -28,7 +28,7 @@ describe EBook do
       expect(@movie.name).to eq("New Title")
     end
     it "should be able to get and set price" do
-      @movie.price = 10.00
+      @movie.price=10.00
       expect(@movie.price).to eq(10.00)
     end
     it "should be able to get and set run time" do
